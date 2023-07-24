@@ -17,11 +17,11 @@ FROM
     CASE 
       WHEN ChannelID = 1949 THEN 'Ambiguous: Email/Other' 
       ELSE ChannelName 
-      END AS channel_name,
+    END AS channel_name,
     CASE 
       WHEN MOD(ItineraryItemID,2) = 0 THEN 'test' 
       ELSE 'control' 
-      END AS ab_test_group,
+    END AS ab_test_group,
     IsCancelled,
     BookingValue
   FROM Bookings t1
