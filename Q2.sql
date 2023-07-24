@@ -2,7 +2,10 @@
 
 SELECT
   EXTRACT(MONTH FROM OrderDate) AS month,
-  CASE WHEN ChannelID = 1949 THEN 'Ambiguous: Email/Other' ELSE ChannelName END AS channel_name,
+  CASE 
+    WHEN ChannelID = 1949 THEN 'Ambiguous: Email/Other' 
+    ELSE ChannelName 
+    END AS channel_name,
   COUNT(DISTINCT(ItineraryItemID)) AS total_booking
 FROM Bookings t1
 INNER JOIN ChannelName t2
