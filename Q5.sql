@@ -1,4 +1,4 @@
-## Q5 Forecast the number of bookings for October 2018. ##
+## Q5 
 
 SELECT
   EXTRACT(YEAR FROM OrderDate) AS year,
