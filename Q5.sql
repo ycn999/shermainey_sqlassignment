@@ -1,5 +1,4 @@
-## Q5 
-
+#Q5
 SELECT
   EXTRACT(YEAR FROM OrderDate) AS year,
   EXTRACT(MONTH FROM OrderDate) AS month,
