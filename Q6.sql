@@ -1,4 +1,4 @@
-## Q6 A/B Test Analysis: difference in cancellation rate after implementing checkout page modification ##
+## Q6
 
 SELECT
   ab_test_group,
