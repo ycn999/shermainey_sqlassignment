@@ -1,5 +1,4 @@
-## Q2
-
+#Q2
 SELECT
   EXTRACT(MONTH FROM OrderDate) AS month,
   CASE 
