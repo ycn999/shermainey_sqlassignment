@@ -8,7 +8,7 @@ SELECT
 FROM
   (
   SELECT
-    (EXTRACT(YEAR FROM OrderDate) || '-' || EXTRACT(MONTH FROM OrderDate)) AS yearmonth,
+    FORMAT_DATE('%Y-%b', OrderDate) AS yearmonth,
     COUNT(ItineraryItemID) AS num_of_bookings
   FROM Bookings t1
   INNER JOIN DeviceType t2
