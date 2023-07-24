@@ -12,7 +12,7 @@ FROM
     COUNT(ItineraryItemID) AS num_of_bookings
   FROM Bookings t1
   INNER JOIN DeviceType t2
-  ON t1.DeviceID = t2.DeviceID
+   ON t1.DeviceID = t2.DeviceID
   WHERE 
     t2.DeviceType = 'DESKTOP' AND
     (
