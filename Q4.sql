@@ -8,8 +8,8 @@ FROM
   SELECT
     CASE WHEN TravelerCount >= 5 THEN 'five_or_more_travelers' END AS traveler_check,
     SUM(BookingValue) AS booking_value,
-    (SELECT SUM(BookingValue) FROM studied-zephyr-393513.tripadvisor20230721.report__bookings WHERE IsCancelled = 0) AS total_booking_value
-  FROM studied-zephyr-393513.tripadvisor20230721.report__bookings
+    (SELECT SUM(BookingValue) FROM Bookings WHERE IsCancelled = 0) AS total_booking_value
+  FROM Bookings
   WHERE IsCancelled = 0 -- assumption: total booking value is more meaningfully analysed when cancellations are removed
   GROUP BY traveler_check
   )
