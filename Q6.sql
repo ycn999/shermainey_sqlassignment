@@ -1,5 +1,4 @@
-## Q6
-
+#Q6
 SELECT
   ab_test_group,
   yearmonth,
