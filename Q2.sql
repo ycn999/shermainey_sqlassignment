@@ -1,4 +1,4 @@
-## Q2 Create a chart showing booking volume by Travel Month and Channel. (Please disregard the year, when looking at month) ##
+## Q2
 
 SELECT
   EXTRACT(MONTH FROM OrderDate) AS month,
