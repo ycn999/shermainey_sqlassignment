@@ -1,5 +1,4 @@
-## Q3
-
+#Q3
 SELECT
   yearmonth,
   num_of_bookings,
