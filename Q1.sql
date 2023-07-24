@@ -1,4 +1,4 @@
-## Q1 Which month by order date has the highest cancellation rate (by booking volume)? And what is the rate? (Please disregard the year, when looking at month) ##
+## Q1
 
 SELECT
   EXTRACT(MONTH FROM OrderDate) AS month,
