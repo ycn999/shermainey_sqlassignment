@@ -3,7 +3,7 @@
 SELECT
   yearmonth,
   num_of_bookings,
-  num_of_bookings - LAG(num_of_bookings) OVER(ORDER BY yearmonth) as YoY_change_num,
+  num_of_bookings - LAG(num_of_bookings) OVER(ORDER BY yearmonth) AS YoY_change_num,
   ROUND((num_of_bookings - LAG(num_of_bookings) OVER(ORDER BY yearmonth))/num_of_bookings,4) AS YoY_change_pct
 FROM
   (
