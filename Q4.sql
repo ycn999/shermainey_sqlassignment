@@ -1,4 +1,4 @@
-## Q4 What % of total booking value comes from trips with 5 or more travellers? ##
+## Q4
 
 SELECT
   traveler_check,
