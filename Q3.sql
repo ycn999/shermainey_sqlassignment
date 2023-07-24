@@ -16,8 +16,8 @@ FROM
   WHERE 
     t2.DeviceType = 'DESKTOP' AND
     (
-      OrderDate BETWEEN '2018-09-01' AND '2018-09-30' OR
-      OrderDate BETWEEN '2017-09-01' AND '2017-09-30'
+    OrderDate BETWEEN '2018-09-01' AND '2018-09-30' OR
+    OrderDate BETWEEN '2017-09-01' AND '2017-09-30'
     )
   GROUP BY yearmonth
   )
