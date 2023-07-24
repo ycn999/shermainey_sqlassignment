@@ -5,7 +5,7 @@ SELECT
   CASE 
     WHEN ChannelID = 1949 THEN 'Ambiguous: Email/Other' 
     ELSE ChannelName 
-    END AS channel_name,
+  END AS channel_name,
   COUNT(DISTINCT(ItineraryItemID)) AS total_booking
 FROM Bookings t1
 INNER JOIN ChannelName t2
