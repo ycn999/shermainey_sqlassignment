@@ -26,9 +26,9 @@ FROM
     BookingValue
   FROM Bookings t1
   INNER JOIN DeviceType t2
-   ON t1.DeviceID = t2.DeviceID
+    ON t1.DeviceID = t2.DeviceID
   INNER JOIN ChannelName t3
-   ON t1.ChannelID = t3.Channel_ID
+    ON t1.ChannelID = t3.Channel_ID
   WHERE 
     EXTRACT(MONTH FROM OrderDate) = 1 AND
     EXTRACT(YEAR FROM OrderDate) = 2018
