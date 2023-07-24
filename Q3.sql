@@ -1,4 +1,4 @@
-## Q3 What is the Year-over-Year change in DESKTOP bookings for the month of September 2018 by order date? ##
+## Q3
 
 SELECT
   yearmonth,
