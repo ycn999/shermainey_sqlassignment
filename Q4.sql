@@ -1,5 +1,4 @@
-## Q4
-
+#Q4
 SELECT
   traveler_check,
   ROUND(booking_value/total_booking_value,4) AS five_or_more_travelers_booking_value_pct
