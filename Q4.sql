@@ -6,7 +6,9 @@ SELECT
 FROM
   (
   SELECT
-    CASE WHEN TravelerCount >= 5 THEN 'five_or_more_travelers' END AS traveler_check,
+    CASE 
+      WHEN TravelerCount >= 5 THEN 'five_or_more_travelers' 
+      END AS traveler_check,
     SUM(BookingValue) AS booking_value,
     (SELECT SUM(BookingValue) FROM Bookings WHERE IsCancelled = 0) AS total_booking_value
   FROM Bookings
